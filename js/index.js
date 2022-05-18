@@ -1,7 +1,7 @@
 
-
+let listCarrinho = []
 const vitrine = document.getElementById("vitrine")
-/* const carrinho = document.getElementsByClassName('boxCarrinhoConteudo') */
+const div = document.querySelector('.boxCarrinhoConteudo')
 
 function gerarVitrine() {
     for (let i = 0; i < data.length; i++) {
@@ -32,6 +32,7 @@ function gerarVitrine() {
 
         const carButton = document.createElement('button')
         carButton.classList = "btnAddCar"
+        carButton.id = data[i].id
         carButton.innerHTML = "Adicionar ao carrinho"
 
 
@@ -47,17 +48,34 @@ function gerarVitrine() {
 
     return vitrine
 }
-/* function gerarCarrinhoVazio(){
+
+function gerarCarrinhoVazio(){
     const h2carrinho = document.createElement('h2')
-    h2carrinho.classList = "conteudoCarrinhoVazio"
+    h2carrinho.classList = "conteudoCarrinho"
     h2carrinho.innerHTML = "Carrinho vázio"
 
-    carrinho.appendChild(h2carrinho)
+    const p = document.createElement('p')
+    p.innerHTML = "adicione itens"
+    
+    div.appendChild(h2carrinho)
+    div.appendChild(p)
+}
 
-    return carrinho
-} */
+function gerarConteudoCarrinho(){
+    console.log('conteudo carrinho teste')
+}
+
+document.addEventListener('click', gerarConteudoCarrinho)
+
+
 
 
 gerarVitrine()
-/* gerarCarrinhoVazio() */
+
+if (listCarrinho.length === 0){
+    gerarCarrinhoVazio()
+}else{
+    gerarConteudoCarrinho()
+}
+
 
