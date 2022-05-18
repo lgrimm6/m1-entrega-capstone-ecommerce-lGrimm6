@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter:wght@100;200;300;400;500;600;700&display=swap');
-body{
-    /* width: 1920px; */
-    /* height: 1080px; */
-}
+
 header {
     box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
     margin-bottom: 23px;
@@ -64,7 +61,6 @@ main {
     flex-wrap: wrap;
     margin: 0px;
     gap: 40px;
-    /* margin-right: 0px; */
 }
 
 .card {
@@ -147,7 +143,7 @@ aside {
     width: 350px;
 }
 
-.carrinhoBarra{
+.carrinhoBarra {
     display: flex;
 
 }
@@ -160,6 +156,7 @@ aside {
     border: none;
     outline: none;
 }
+
 .btnPesquisa {
     width: 100px;
     height: 50px;
@@ -169,6 +166,7 @@ aside {
     border: none;
     cursor: pointer;
 }
+
 .pesquisa::placeholder {
     color: #242424;
     font-family: 'Inter', sans-serif;
@@ -182,7 +180,6 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .boxCarrinhoTitle {
@@ -204,7 +201,6 @@ aside {
     justify-content: center;
     padding: 82px 97px;
     gap: 10px;
-
 }
 
 .conteudoCarrinho {
