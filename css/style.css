@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 body{
-    width: 1920px;
+    /* width: 1920px; */
     /* height: 1080px; */
 }
 header {
@@ -143,8 +143,13 @@ aside {
     flex-wrap: wrap;
     float: right;
     margin-right: 115px;
-    margin-top: -45%;
+    margin-top: 100px;
     width: 350px;
+}
+
+.carrinhoBarra{
+    display: flex;
+
 }
 
 .pesquisa {
@@ -193,6 +198,7 @@ aside {
 .boxCarrinhoConteudo {
     background: #F5F5F5;
     display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;

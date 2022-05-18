@@ -1,6 +1,7 @@
 
 
 const vitrine = document.getElementById("vitrine")
+/* const carrinho = document.getElementsByClassName('boxCarrinhoConteudo') */
 
 function gerarVitrine() {
     for (let i = 0; i < data.length; i++) {
@@ -46,6 +47,17 @@ function gerarVitrine() {
 
     return vitrine
 }
+/* function gerarCarrinhoVazio(){
+    const h2carrinho = document.createElement('h2')
+    h2carrinho.classList = "conteudoCarrinhoVazio"
+    h2carrinho.innerHTML = "Carrinho vázio"
+
+    carrinho.appendChild(h2carrinho)
+
+    return carrinho
+} */
+
 
 gerarVitrine()
+/* gerarCarrinhoVazio() */
 
